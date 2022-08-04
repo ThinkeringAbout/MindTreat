@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(270deg, #faf0cd, #fab397);
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #D1512D;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.header-links a {
+  font-size:20px;
+  line-height: 18px;
+  color: #411530;
+  text-decoration: none;
+}
+
+.contact-btn button{
+  font-size: 20px;
+  color: #D1512D;
+}
+
+.contact-us-btn {
+  background: none;
+  width: 140px;
+  height: 40px;
+  border-color: #411530;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-us-btn:hover {
+  background-color: #411530;
+  font-weight: 900;
+}
+
+h1 {
+  color: #D1512D;
+  font-size: 28px;
+  font-weight: 700;
+  width: calc(28px * 14);
+  text-align: center;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-btns {
+  width: calc(28px * 14);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-btn {
+  width: 130px;
+  height: 46px;
+  font-size: 22px;
+  font-weight: 700;
+  border-color: #411530;
+  cursor: pointer;
+}
+
+.tour-btn {
+  color: white;
+  background-color: #411530;
+  transition: 0.3s ease;
+}
+
+.tour-btn:hover {
+  box-shadow: 0 0 10px #411530;
+  color: #411530;
+  background: none;
+}
+
+.start-btn {
+  color: #411530;
+  background: none;
+  transition: 0.3s ease;
+}
+
+.start-btn:hover {
+  box-shadow: 0 0 10px #411530;
+  color: white;
+  background: #411530;
+}
+
+main {
+  width: 100%;
+}
+
+.image {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image img {
+  width: 295px;
+  height: 271px;
+  border-radius: 40%;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.content .content-text,
+.content-meditate {
+  color: #411530;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.content-text p {
+  width: 270px;
+}
+
+.content-meditate p {
+  width: 150px;
+  text-align: center;
+}
+
+.smaller {
+  font-size: 23px;
+}
+
+
+
+
+/* MEDIA */
+
+@media(max-width: 720px) {
+  .logo a {
+    font-size: 0.9rem;
+  }
+  .header-links a {
+    font-size: 0.9rem;
+  }
+  .contact-btn .contact-us-btn {
+    font-size: 0.9rem;
+    width: 100px;
+  }
+  h1 {
+    font-size: 0.9rem;
+    width: calc(15px * 14);
+  }
+  .main-btn {
+    font-size: 0.9rem;
+    width: 90px;
+    height: 36px;
+  }
+  .main-btns {
+    width: calc(15px * 14);
+  }
+  .image img {
+    width: 215px;
+    height: 185px;
+  }
+  .content p {
+    font-size: 0.9rem;
+    width: 150px;
+  }
+  .content .smaller {
+    font-size: 0.8rem;
+  }
+  .content-meditate {
+    width: 120px;
+  }
+  header {
+    width: 80%;
+  }
+  .content {
+    margin-top: 30px;
+  }
+}
+
+@media(max-width: 600px) {
+  .header-links {
+    width: 200px;
+  }
+  .content {
+    width: 70%;
+  }
+
+}
+
+@media(max-width: 415px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media(max-width: 290px) {
+  .logo a {
+    font-size: 0.8rem;
+  }
+  .header-links a {
+    font-size: 0.8rem;
+  }
+  .contact-btn .contact-us-btn {
+    font-size: 0.8rem;
+    width: 80px;
+  }
+  h1 {
+    font-size: 0.9rem;
+    width: calc(15px * 14);
+  }
+  .main-btn {
+    font-size: 0.9rem;
+    width: 90px;
+    height: 36px;
+  }
+  .main-btns {
+    width: calc(15px * 14);
+  }
+  .content p {
+    font-size: 0.8rem;
+    width: 140px;
+  }
+  .content .smaller {
+    font-size: 0.75rem;
+  }
+  .content-meditate {
+    width: 110px;
+  }
+}
